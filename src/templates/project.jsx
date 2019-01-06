@@ -6,6 +6,10 @@ import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { SEO, Container, Layout, Hero, BGImage } from '../components'
+import Slider from "react-slick";
+
+import "../../node_modules/slick-carousel/slick/slick.css";
+import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 const Content = styled(Container)`
   position: absolute;
@@ -43,8 +47,36 @@ const InfoBlock = styled.div`
   }
 `
 
+
+const settings = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 2000,
+  autoplaySpeed: 2000,
+  cssEase: "linear",
+  responsive: [
+      {   
+          breakpoint: 480,
+          settings: {
+              slidesToShow: 2,                
+          }
+      },
+      {
+          breakpoint: 720,
+          settings: {
+              slidesToShow: 3,
+          }
+      }
+  ]
+};
+
+
 const Project = ({ pageContext: { slug }, data: { mdx: postNode } }) => {
   const project = postNode.frontmatter
+  console.log(postNode)
   return (
     <Layout>
       <SEO postPath={slug} postNode={postNode} postSEO />
@@ -89,8 +121,25 @@ const Project = ({ pageContext: { slug }, data: { mdx: postNode } }) => {
         <Spring native config={config.slow} delay={1000} from={{ opacity: 0 }} to={{ opacity: 1 }}>
           {props => (
             <animated.div style={props}>
+            <animated.div style={props}>
               <MDXRenderer>{postNode.code.body}</MDXRenderer>
             </animated.div>
+            <animated.div style={props}>
+            <Slider {...settings} >
+            <div>
+                    {/* <img src={require('../../static/images/banjara rd10/1.jpg')} alt="zyppys" /> */}
+            </div>
+            <div>
+                    {/* <img src={require('./blobSphere.jpg')} alt="zyppys" /> */}
+            </div>
+            <div>
+                    {/* <img src={require('./blobSphere.jpg')} alt="zyppys" /> */}
+            </div>
+            </Slider>
+            </animated.div>
+            </animated.div>
+
+
           )}
         </Spring>
       </Container>

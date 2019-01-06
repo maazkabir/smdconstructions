@@ -10,8 +10,8 @@ module.exports = {
   author: 'SMK', // Author for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@emma', // Twitter Username
-  ogSiteName: 'emma', // Facebook Site Name
+  userTwitter: '@smdconnstructions', // Twitter Username
+  ogSiteName: 'smdconstructions', // Facebook Site Name
   ogLanguage: 'en_US',
   googleAnalyticsID: 'UA-12345689-1',
 
