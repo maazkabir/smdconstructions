@@ -102,7 +102,7 @@ const Navigation = () => (
         <Name>
           <Link to="/" data-testid="home-title-link">
             {/* {config.siteTitle} */}
-            <img src={require('../../static/logo.png')} height={60} alt="zyppys"/>
+            <img src={require('../../static/logo.svg')} height={60} alt="zyppys"/>
           </Link>
         </Name>
         <SocialMedia>
