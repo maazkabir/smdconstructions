@@ -125,17 +125,28 @@ const Project = ({ pageContext: { slug }, data: { mdx: postNode } }) => {
               <MDXRenderer>{postNode.code.body}</MDXRenderer>
             </animated.div>
             <animated.div style={props}>
-            <Slider {...settings} >
+            {/* <Slider {...settings} >
             <div>
-                    {/* <img src={require('../../static/images/banjara rd10/1.jpg')} alt="zyppys" /> */}
-            </div>
-            <div>
-                    {/* <img src={require('./blobSphere.jpg')} alt="zyppys" /> */}
-            </div>
-            <div>
-                    {/* <img src={require('./blobSphere.jpg')} alt="zyppys" /> */}
-            </div>
-            </Slider>
+  <div>
+  <img src={require('../../static/images/oceans basket/1.jpg')} alt="zyppys" />
+  </div>
+  <div>
+  <img src={require('../../static/images/oceans basket/2.jpg')} alt="zyppys" />
+  </div>
+  <div>
+  <img src={require('../../static/images/oceans basket/3.jpg')} alt="zyppys" />
+  </div>
+  <div>
+  <img src={require('../../static/images/oceans basket/4.jpg')} alt="zyppys" />
+  </div>
+  <div>
+  <img src={require('../../static/images/oceans basket/5.jpg')} alt="zyppys" />
+  </div>
+  <div>
+  <img src={require('../../static/images/oceans basket/6.jpg')} alt="zyppys" />
+  </div>
+  </div>
+            </Slider> */}
             </animated.div>
             </animated.div>
 
