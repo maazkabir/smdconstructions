@@ -26,6 +26,7 @@ const InformationWrapper = styled(animated.div)`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+
 `
 
 const Title = styled(animated.h1)`
