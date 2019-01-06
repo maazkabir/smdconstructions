@@ -101,7 +101,8 @@ const Navigation = () => (
         </Nav>
         <Name>
           <Link to="/" data-testid="home-title-link">
-            {config.siteTitle}
+            {/* {config.siteTitle} */}
+            <img src={require('../../static/logo.png')} height={60} alt="zyppys"/>
           </Link>
         </Name>
         <SocialMedia>
