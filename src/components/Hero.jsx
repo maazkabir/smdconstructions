@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Hero = styled.section`
   position: relative;
   ${'' /* to make the background go into header on desktop */}
-  margin-top: -5rem;
+  margin-top: -9rem;
   overflow: hidden;
   margin-bottom: ${props => (props.single ? '4rem' : '6rem')};
   @media (max-width: ${props => props.theme.breakpoints.m}), (max-device-width: ${props => props.theme.breakpoints.m}) {
